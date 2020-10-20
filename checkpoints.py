@@ -6,7 +6,7 @@ from .flags import FLAGS
 from .logging import log_info, log_error, log_warn
 
 
-def _load_checkpoint(session, checkpoint_path, allow_drop_layers):
+def _load_checkpoint(session, checkpoint_path, allow_drop_layers, ignore_var_names=[]):
     # Load the checkpoint and put all variables into loading list
     # we will exclude variables we do not wish to load and then
     # we will initialize them instead
@@ -23,19 +23,8 @@ def _load_checkpoint(session, checkpoint_path, allow_drop_layers):
         load_vars -= lr_var
         init_vars |= lr_var
 
-    # deepspeech-audio-features: there are a few variables
-    # we've added to the graph ourselves. They aren't saved
-    # in the checkpoint files, so we don't try to load them.
-    ignore_names = []
-    for v in load_vars:
-        name = v.op.name
-        if name.startswith('input_var'):
-            ignore_names.append(name)
-    for name in ignore_names:
-        var_set = set(v for v in load_vars if v.op.name == name)
-        if len(var_set) == 1:
-            load_vars -= var_set
-            init_vars |= var_set
+    ignore_vars = set(v for v in load_vars if v.op.name in ignore_var_names)
+    load_vars -= ignore_vars
 
     if FLAGS.load_cudnn:
         # Initialize training from a CuDNN RNN checkpoint
@@ -101,14 +90,14 @@ def _initialize_all_variables(session):
         session.run(v.initializer)
 
 
-def _load_or_init_impl(session, method_order, allow_drop_layers):
+def _load_or_init_impl(session, method_order, allow_drop_layers, ignore_var_names=[]):
     for method in method_order:
         # Load best validating checkpoint, saved in checkpoint file 'best_dev_checkpoint'
         if method == 'best':
             ckpt_path = _checkpoint_path_or_none('best_dev_checkpoint')
             if ckpt_path:
                 log_info('Loading best validating checkpoint from {}'.format(ckpt_path))
-                return _load_checkpoint(session, ckpt_path, allow_drop_layers)
+                return _load_checkpoint(session, ckpt_path, allow_drop_layers, ignore_var_names)
             log_info('Could not find best validating checkpoint.')
 
         # Load most recent checkpoint, saved in checkpoint file 'checkpoint'
@@ -116,7 +105,7 @@ def _load_or_init_impl(session, method_order, allow_drop_layers):
             ckpt_path = _checkpoint_path_or_none('checkpoint')
             if ckpt_path:
                 log_info('Loading most recent checkpoint from {}'.format(ckpt_path))
-                return _load_checkpoint(session, ckpt_path, allow_drop_layers)
+                return _load_checkpoint(session, ckpt_path, allow_drop_layers, ignore_var_names)
             log_info('Could not find most recent checkpoint.')
 
         # Initialize all variables
@@ -132,7 +121,7 @@ def _load_or_init_impl(session, method_order, allow_drop_layers):
     sys.exit(1)
 
 
-def load_or_init_graph_for_training(session):
+def load_or_init_graph_for_training(session, ignore_var_names=[]):
     '''
     Load variables from checkpoint or initialize variables. By default this will
     try to load the best validating checkpoint, then try the last checkpoint,
@@ -143,10 +132,10 @@ def load_or_init_graph_for_training(session):
         methods = ['best', 'last', 'init']
     else:
         methods = [FLAGS.load_train]
-    _load_or_init_impl(session, methods, allow_drop_layers=True)
+    _load_or_init_impl(session, methods, allow_drop_layers=True, ignore_var_names=ignore_var_names)
 
 
-def load_graph_for_evaluation(session):
+def load_graph_for_evaluation(session, ignore_var_names=[]):
     '''
     Load variables from checkpoint. Initialization is not allowed. By default
     this will try to load the best validating checkpoint, then try the last
@@ -157,4 +146,4 @@ def load_graph_for_evaluation(session):
         methods = ['best', 'last']
     else:
         methods = [FLAGS.load_evaluate]
-    _load_or_init_impl(session, methods, allow_drop_layers=False)
+    _load_or_init_impl(session, methods, allow_drop_layers=False, ignore_var_names=ignore_var_names)
