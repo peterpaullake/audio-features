@@ -3,9 +3,11 @@ Do feature visualization on [Mozilla's DeepSpeech](https://github.com/mozilla/De
 Requires Python 3.6 and a Mac or Linux environment.
 
 # Quick links
-[Original notebook](https://peterpaullake.github.io/deepspeech-audio-features/deepspeech-audio-features.html)
+[Higher contrast masks](https://peterpaullake.github.io/deepspeech-audio-features/higher-contrast-masks.html)
 
 [Better importance masks and applying importance masks to audio](https://peterpaullake.github.io/deepspeech-audio-features/importance-masks.html)
+
+[Original notebook](https://peterpaullake.github.io/deepspeech-audio-features/deepspeech-audio-features.html)
 
 # Installation
 Clone deepspeech-audio-features
