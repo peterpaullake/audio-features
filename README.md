@@ -1,21 +1,22 @@
-# deepspeech-audio-features
-Do feature visualization on [Mozilla's DeepSpeech](https://github.com/mozilla/DeepSpeech/).
-Requires Python 3.6 and a Mac or Linux environment.
+# Audio Features
+Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and [Deep Speech](https://arxiv.org/pdf/1412.5567.pdf).
 
 # Quick links
-[Looking for interesting neurons 1](https://peterpaullake.github.io/deepspeech-audio-features/looking-for-interesting-neurons-1.html), [Looking for interesting neurons 2](https://peterpaullake.github.io/deepspeech-audio-features/looking-for-interesting-neurons-2.html)
+[WaveNet features](https://peterpaullake.github.io/audio-features/wavenet-features.html)
 
-[Higher contrast masks](https://peterpaullake.github.io/deepspeech-audio-features/higher-contrast-masks.html)
+[Looking for interesting neurons 1](https://peterpaullake.github.io/audio-features/looking-for-interesting-neurons-1.html), [Looking for interesting neurons 2](https://peterpaullake.github.io/audio-features/looking-for-interesting-neurons-2.html)
 
-[Better importance masks and applying importance masks to audio](https://peterpaullake.github.io/deepspeech-audio-features/importance-masks.html)
+[Higher contrast masks](https://peterpaullake.github.io/audio-features/higher-contrast-masks.html)
 
-[Original notebook](https://peterpaullake.github.io/deepspeech-audio-features/deepspeech-audio-features.html)
+[Better importance masks and applying importance masks to audio](https://peterpaullake.github.io/audio-features/importance-masks.html)
+
+[Original notebook](https://peterpaullake.github.io/audio-features/audio-features.html)
 
 # Installation
-Clone deepspeech-audio-features
+Clone audio-features
 ```
-git clone https://github.com/peterpaullake/deepspeech-audio-features
-cd deepspeech-audio-features
+git clone https://github.com/peterpaullake/audio-features
+cd audio-features
 ```
 Clone DeepSpeech and set up a virtual environment according to the [DeepSpeech training installation instructions](https://deepspeech.readthedocs.io/en/latest/TRAINING.html)
 ```
