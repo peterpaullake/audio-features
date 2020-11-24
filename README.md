@@ -2,6 +2,8 @@
 Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and [Deep Speech](https://arxiv.org/pdf/1412.5567.pdf).
 
 # Quick links
+[More WaveNet features (local conditioning features)](https://peterpaullake.github.io/audio-features/more-wavenet-features.html)
+
 [WaveNet features](https://peterpaullake.github.io/audio-features/wavenet-features.html)
 
 [Looking for interesting neurons 1](https://peterpaullake.github.io/audio-features/looking-for-interesting-neurons-1.html), [Looking for interesting neurons 2](https://peterpaullake.github.io/audio-features/looking-for-interesting-neurons-2.html)
