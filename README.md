@@ -2,6 +2,8 @@
 Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and [Deep Speech](https://arxiv.org/pdf/1412.5567.pdf).
 
 # Quick links
+[High variance units](https://peterpaullake.github.io/audio-features/high-variance-units.html)
+
 [Minimizing distance from expectation values](https://peterpaullake.github.io/audio-features/minimizing-distance-from-expectation-values.html)
 
 [More WaveNet features (local conditioning features)](https://peterpaullake.github.io/audio-features/more-wavenet-features.html)
