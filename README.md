@@ -2,6 +2,8 @@
 Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and [Deep Speech](https://arxiv.org/pdf/1412.5567.pdf).
 
 # Quick links
+[Editing wave input and mel spectrogram input simultaneously](https://peterpaullake.github.io/audio-features/editing-wave-input-and-mel-spec-simultaneously.html)
+
 [More high variance units](https://peterpaullake.github.io/audio-features/more-high-variance-units.html)
 
 [High variance units](https://peterpaullake.github.io/audio-features/high-variance-units.html)
