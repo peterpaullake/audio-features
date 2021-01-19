@@ -2,6 +2,8 @@
 Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and [Deep Speech](https://arxiv.org/pdf/1412.5567.pdf).
 
 # Quick links
+[Deterministic inference](https://peterpaullake.github.io/audio-features/deterministic-inference.html)
+
 [Editing wave input and mel spectrogram input simultaneously](https://peterpaullake.github.io/audio-features/editing-wave-input-and-mel-spec-simultaneously.html)
 
 [More high variance units](https://peterpaullake.github.io/audio-features/more-high-variance-units.html)
