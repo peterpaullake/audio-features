@@ -2,7 +2,7 @@
 Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and [Deep Speech](https://arxiv.org/pdf/1412.5567.pdf).
 
 # Quick links
-[Maximization experiment](https://peterpaullake.github.io/audio-features/table/maximization-experiment.html)
+[Maximization experiment](https://peterpaullake.github.io/audio-features/maximization-experiment.html)
 
 [Intermediate outputs](https://peterpaullake.github.io/audio-features/table/index.html)
 
