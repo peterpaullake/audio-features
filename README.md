@@ -2,6 +2,8 @@
 Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and [Deep Speech](https://arxiv.org/pdf/1412.5567.pdf).
 
 # Quick links
+[Plugging output into input](plugging-output-into-input.html)
+
 [Artificially generated inputs](https://peterpaullake.github.io/audio-features/artificially-generated-inputs.html)
 
 [Jacobian of output with respect to input](https://peterpaullake.github.io/audio-features/jacobian-experiment.html)
