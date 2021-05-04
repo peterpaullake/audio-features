@@ -2,6 +2,8 @@
 Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and [Deep Speech](https://arxiv.org/pdf/1412.5567.pdf).
 
 # Quick links
+[Maximizing activations vs maximizing gradients](https://peterpaullake.github.io/audio-features/maximizing-activations-vs-maximizing-gradients.html)
+
 [More repeated WaveNet applications](https://peterpaullake.github.io/audio-features/more-repeated-wavenet-applications.html)
 
 [Plugging output into input](https://peterpaullake.github.io/audio-features/plugging-output-into-input.html)
