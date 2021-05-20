@@ -2,6 +2,8 @@
 Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and [Deep Speech](https://arxiv.org/pdf/1412.5567.pdf).
 
 # Quick links
+[Overfitting on 8 training examples](https://peterpaullake.github.io/audio-features/overfitting.html)
+
 [WaveNet trained on MusicNet](https://peterpaullake.github.io/audio-features/wavenet-trained-on-musicnet.html)
 
 [Music and speech as seed audio](https://peterpaullake.github.io/audio-features/music-and-speech-as-seed-audio.html)
