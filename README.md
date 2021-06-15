@@ -2,6 +2,10 @@
 Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and [Deep Speech](https://arxiv.org/pdf/1412.5567.pdf).
 
 # Quick links
+[Mel spectrogram interpolation](https://peterpaullake.github.io/audio-features/mel-spectrogram-interpolation.html)
+
+[Maestro unconditional](https://peterpaullake.github.io/audio-features/maestro-unconditional.html)
+
 [Fisher](https://peterpaullake.github.io/audio-features/fisher.html)
 
 [Training WaveNet on MAESTRO dataset](https://peterpaullake.github.io/audio-features/maestro.html)
