@@ -2,6 +2,8 @@
 Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and [Deep Speech](https://arxiv.org/pdf/1412.5567.pdf).
 
 # Quick links
+[Long vs short receptive field](https://peterpaullake.github.io/audio-features/long-vs-short-receptive-field.html)
+
 [Maestro conditional 2](https://peterpaullake.github.io/audio-features/maestro2.html)
 
 [Mel spectrogram interpolation](https://peterpaullake.github.io/audio-features/mel-spectrogram-interpolation.html)
