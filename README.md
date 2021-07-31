@@ -2,7 +2,7 @@
 Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and [Deep Speech](https://arxiv.org/pdf/1412.5567.pdf).
 
 # Quick links
-[Overfitting a 16 kHz unconditional WaveNet](overfitting-a-16-khz-unconditional-wavenet.html)
+[Overfitting a 16 kHz unconditional WaveNet](https://peterpaullake.github.io/audio-features/overfitting-a-16-khz-unconditional-wavenet.html)
 
 [16 kHz unconditional WaveNets](https://peterpaullake.github.io/audio-features/16-khz-unconditional-wavenets.html)
 
