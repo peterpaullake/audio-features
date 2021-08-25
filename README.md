@@ -2,6 +2,8 @@
 Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and [Deep Speech](https://arxiv.org/pdf/1412.5567.pdf).
 
 # Quick links
+[Overfitting on a sine wave (fixed off-by-one training issue)](https://peterpaullake.github.io/audio-features/overfitting-on-a-sine-wave-2.html)
+
 [Overfitting on a sine wave with scaling](https://peterpaullake.github.io/audio-features/overfitting-on-a-sine-wave-with-scaling.html)
 
 [Overfitting on a sine wave](https://peterpaullake.github.io/audio-features/overfitting-on-a-sine-wave.html)
