@@ -2,6 +2,8 @@
 Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and [Deep Speech](https://arxiv.org/pdf/1412.5567.pdf).
 
 # Quick links
+[mu-law](https://peterpaullake.github.io/audio-features/notebooks/mu-law.html)
+
 [Griffin-Lim demo](https://peterpaullake.github.io/audio-features/notebooks/griffin-lim-demo.html)
 
 [Overfitting on a sine wave (fixed off-by-one training issue)](https://peterpaullake.github.io/audio-features/notebooks/overfitting-on-a-sine-wave-2.html)
