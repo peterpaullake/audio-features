@@ -2,6 +2,8 @@
 Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and [Deep Speech](https://arxiv.org/pdf/1412.5567.pdf).
 
 # Quick links
+[Frequency responses of layers](https://peterpaullake.github.io/audio-features/notebooks/frequency responses of layers.html)
+
 [Chromatic scale unit activations](https://peterpaullake.github.io/audio-features/notebooks/chromatic-scale-unit-activations.html)
 
 [mu-law](https://peterpaullake.github.io/audio-features/notebooks/mu-law.html)
