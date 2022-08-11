@@ -3,6 +3,7 @@ Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and 
 
 # Quick links
 [WaveNet trained on pairs of notes](https://peterpaullake.github.io/audio-features/notebooks/wavenet-trained-on-pairs-of-notes.html)
+
 [Spectrograms of layers](https://peterpaullake.github.io/audio-features/notebooks/spectrograms-of-layers.html)
 
 [Spectrograms of preresidual activations](https://peterpaullake.github.io/audio-features/notebooks/spectrograms-of-preresidual-activations.html)
