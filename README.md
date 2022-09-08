@@ -2,7 +2,7 @@
 Do feature visualization on [WaveNet](https://arxiv.org/pdf/1609.03499.pdf) and [Deep Speech](https://arxiv.org/pdf/1412.5567.pdf).
 
 # Quick links
-[WaveNet trained harmonic series](https://peterpaullake.github.io/audio-features/notebooks/notebooks/wavenet-trained-on-harmonic-series.html)
+[WaveNet trained harmonic series](https://peterpaullake.github.io/audio-features/notebooks/wavenet-trained-on-harmonic-series.html)
 
 [WaveNet trained on sums of pairs of sinusoids](https://peterpaullake.github.io/audio-features/notebooks/wavenet-trained-on-sums-of-pairs-of-sinusoids.html)
 
